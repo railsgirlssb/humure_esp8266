@@ -20,8 +20,7 @@ ADC_MODE(ADC_VCC);
 #define LED 0
 byte pin_status = 1; // low 
 
-const char* ssid     = "Humure";
-const char* password = "Railsgirls";
+#include "wifi_password.h"
 
 // TCP server auf Port 80
 WiFiServer server(80);
