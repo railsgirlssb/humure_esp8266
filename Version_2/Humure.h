@@ -4,7 +4,6 @@
 #include <DHT.h>
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
-#include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
 
 class Humure
@@ -18,6 +17,7 @@ class Humure
     void readSensor();
     void setup();
     void jsonValue(WiFiClient client, String str_value = "", String str_name = "value");
+    void sendFullPage(WiFiClient client);
 
     // DHT sensor (temperature, humidity)
     DHT dht;
@@ -27,7 +27,7 @@ class Humure
     unsigned long v;
 
     // webserver
-    ESP8266WebServer server;
+    WiFiServer server;
 
     // status led
     uint8_t led;
