@@ -1,3 +1,4 @@
 # WLAN-Passwörter ignorieren
 # (Datei muss zuvor aber commit worden sein!)
+Version_1/wifi_password.h
 Version_2/wifi_password.h
